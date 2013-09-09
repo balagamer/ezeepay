@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/travels_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/holo_green_light"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:singleLine="true"
+            android:text="Bus Name"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/bustype_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:paddingLeft="5dp"
+            android:text="Ac Seater"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mynumber2alerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pickup_address_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:lines="2"
+                android:paddingLeft="5dp"
+                android:text="Chennai"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="To"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/destination_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:lines="2"
+                android:paddingLeft="5dp"
+                android:text="Destination"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/pnr_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PNR Number"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pnr_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="PNR Value"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/mydatacardalerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/doj_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Journey Date &amp; Time"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/doj_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Date"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mylandlinealerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/dob_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date Booked "
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/dob_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Booking Date"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/pickuplocation_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/holo_green_light"
+            android:gravity="center"
+            android:text="Pickup Location "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pickuplocation_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Location"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/pickuplandmark_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Landmark"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mydthalerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/totalfare_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fare : "
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/totalfare_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="500"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/status_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minEms="7"
+                android:text="Status :"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:paddingLeft="5dp"
+                android:text="BOOKED"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flightname_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/holo_green_light"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:singleLine="true"
+            android:text="Passenger Data"
+            android:textColor="@color/Black"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/div1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/pnames_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pnames_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Psn Names"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/seatnames_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Seats"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seatnames_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Seat Data"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+   
+</LinearLayout>

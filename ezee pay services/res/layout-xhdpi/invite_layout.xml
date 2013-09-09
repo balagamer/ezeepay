@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="a151766d0bb0d9c"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Invite your friends to ezeepay and get bonus points"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/selectfriends_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Friends" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42" >
+    </ListView>
+
+    <Button
+        android:id="@+id/sendinvite_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Invite" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical" >
+
+     <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="a151766d0bb0d9c"
+            ads:loadAdOnCreate="true" >
+
+    </com.google.ads.AdView>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="mpin serves as a master password for all your transaction.Confirm your mpin to start making transactions" />
+
+     <TextView
+         android:id="@+id/mydatacardalerts_text"
+         style="?android:attr/listSeparatorTextViewStyle"
+         android:layout_width="match_parent"
+         android:layout_height="10dp"
+         android:background="@drawable/horizontaldivider"
+         android:gravity="center_vertical" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mpin"
+        android:inputType="numberPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="confirm mpin"
+        android:inputType="numberPassword" />
+
+</LinearLayout>

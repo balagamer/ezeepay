@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:showDividers="middle" >
+
+     <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="a151766d0bb0d9c"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+
+    <Spinner
+        android:id="@+id/paymentmode_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="fill" />
+
+    <Spinner
+        android:id="@+id/paymentoption_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="fill" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/horizontaldivider"
+        android:gravity="center_vertical" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/userinput_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/cardholder_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Card Holder Name"
+                android:padding="15dp" >
+                    <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/cardno_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Card No"
+                android:inputType="number"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/expirymonth_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Expiry Month (mm)"
+                android:inputType="number"
+                android:padding="15dp"
+                android:visibility="visible" />
+
+            
+
+            <EditText
+                android:id="@+id/expiryyear_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Expiry Year (yyyy)"
+                android:inputType="number"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/cvvno_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CVV"
+                android:inputType="number"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/cvv_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="CVV is the last 3 digits printed on the signature strip at the back of your credit/debit cards"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/rechargeamount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount to topup"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mydatacardalerts_text"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/horizontaldivider"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/rechargewallet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Attach to wallet" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref" >
+
+    <PreferenceCategory android:title="Application Preferences" >
+
+        <!--
+             <EditTextPreference
+            android:key="prefUsername"
+            android:summary="Enter user name"
+            android:title="Username" />
+        -->
+    </PreferenceCategory>
+
+    <!--
+         <SwitchPreference
+        android:key="pref_geolocation"
+        android:summary="Toggles the geolocation"
+        android:switchTextOff="OFF"
+        android:switchTextOn="ON"
+        android:title="GeoLocation" />
+    -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_darktheme"
+        android:summary="Changes the user interface to holo dark ui"
+        android:title="Use dark theme" >
+    </CheckBoxPreference>
+    <!--
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="prefstartup"
+        android:summary="Allow application to run on startup"
+        android:title="Run at startup" >
+    </CheckBoxPreference>
+    -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="prefnotification"
+        android:summary="Show alerts in notification"
+        android:title="Show Alerts" >
+    </CheckBoxPreference>
+
+    <PreferenceCategory android:title="Bank/Wallet Preferences" >
+        <ListPreference
+            android:entries="@array/paymentmode"
+            android:entryValues="@array/paymentmode_values"
+            android:key="pref_paymentmode"
+            android:summary="Select the preferred payment mode"
+            android:title="Preferred Payment Method" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="My Data Preferences" >
+        <PreferenceScreen
+            android:summary="Enter your frequently accessed data"
+            android:title="Quick Pay Data" >
+            <EditTextPreference
+                android:inputType="number"
+                android:key="pref_mymobile"
+                android:summary="Enter your Mobile number for easy recharge"
+                android:title="Mobile" />
+            <EditTextPreference
+                android:inputType="number"
+                android:key="pref_mymobile2"
+                android:summary="Enter your 2nd Mobile number for easy recharge"
+                android:title="2nd mobile" />
+            <EditTextPreference
+                android:inputType="number"
+                android:key="pref_mydth"
+                android:summary="Enter your DTH number"
+                android:title="DTH" />
+            <EditTextPreference
+                android:inputType="number"
+                android:key="pref_mydatacard"
+                android:summary="Enter your Datacard number"
+                android:title="Datacard" />
+            <EditTextPreference
+                android:inputType="number"
+                android:key="pref_myinsurance"
+                android:summary="Enter your Insurance number here for quick pay"
+                android:title="Insurance" />
+            <EditTextPreference
+                android:key="pref_mylandline"
+                android:summary="Enter you Landline Bill number to use quick pay feature"
+                android:title="Landline Bill" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

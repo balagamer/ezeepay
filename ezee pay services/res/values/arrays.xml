@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="paymentmode">
+        <item name="1">Credit Cards</item>
+        <item name="2">Debit Cards</item>
+        <item name="3">Net Banking</item>
+        <item name="4">None</item>
+    </string-array>
+    <string-array name="paymentmode_values">
+        <item name="1">"credit_cards"</item>
+        <item name="2">"debit_cards"</item>
+        <item name="3">"net_banking"</item>
+        <item name="4">"none"</item>
+    </string-array>
+</resources>

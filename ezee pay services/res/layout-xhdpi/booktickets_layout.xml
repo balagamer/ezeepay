@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/selectseats_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Seats" />
+
+        <Spinner
+            android:id="@+id/boardingpoint_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tripdata_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Travel Data"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tripdata_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Travel Data"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tripdate_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Travel Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tripdate_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Journe Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/flightname_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Bus"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/busname_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Bus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/total_seatsselected_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Seats Selected"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/total_seatsselected_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Total Seats"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/totalfare_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Total Fare"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/totalfare_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+
+            <TextView
+                android:id="@+id/totalfare_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Fare"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/holo_green_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mydatacardalerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/policy_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_selector"
+            android:text="View Cancellation Policy" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/holo_green_light"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Passenger Data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/mynumber2alerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:id="@+id/passenger1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/seatno1_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical|fill_horizontal|fill"
+                android:maxEms="4"
+                android:text="Seat "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passenger1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Passenger 1"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/gender1_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Gender"
+                android:minHeight="39dp"
+                android:text="Gender"
+                android:textOff="Female"
+                android:textOn="Male"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passenger2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/seatno2_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical|fill_horizontal|fill"
+                android:maxEms="4"
+                android:text="Seat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passenger2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Passenger 2"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/gender2_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Gender"
+                android:textOff="Female"
+                android:textOn="Male"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passenger3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/seatno3_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical|fill_horizontal|fill"
+                android:maxEms="4"
+                android:text="Seat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passenger3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Passenger 3"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/gender3_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Gender"
+                android:textOff="Female"
+                android:textOn="Male"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passenger4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/seatno4_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="fill_vertical|fill_horizontal|fill"
+                android:maxEms="4"
+                android:text="Seat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passenger4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Passenger 4"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/gender4_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Gender"
+                android:textOff="Female"
+                android:textOn="Male"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passenger5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/seatno5_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="fill_vertical|fill_horizontal|fill"
+                android:maxEms="4"
+                android:text="Seat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passenger5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Passenger 5"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/gender5_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Gender"
+                android:textOff="Female"
+                android:textOn="Male"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/payment_modes_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mydthalerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/agreeterms_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="I agree to the terms and conditons" />
+
+        <TextView
+            android:id="@+id/insurancealerts_text"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/confirmtickets_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirm" />
+    </LinearLayout>
+
+</ScrollView>

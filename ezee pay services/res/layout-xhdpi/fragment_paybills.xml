@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/speech_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/list_selector"
+                android:scaleType="center"
+                android:src="@drawable/voice"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/payment_categories_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="fill" />
+
+            <ImageButton
+                android:id="@+id/number_option_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:src="@drawable/menu_squared" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/billno_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/payment_billno_text"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/autoselect_button"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Bill No/ID"
+                android:inputType="none" />
+
+            <Button
+                android:id="@+id/autoselect_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/payment_billno_text"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/number_option_button"
+                android:minHeight="48dp"
+                android:text="auto select" />
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="auto fill text (wip)"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/additional_details_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Additional" />
+
+        <Spinner
+            android:id="@+id/circle_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/payment_vendors_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/payment_amount_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:visibility="visible" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/payment_modes_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/amount_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/plan_option_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false"
+                android:text="Options"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/additionalcharges_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Provisional chrages for your Bill \u20B9 "
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/payment_remarks_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Remarks"
+            android:inputType="textMultiLine"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/proceed_bills_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Proceed >>" />
+    </LinearLayout>
+
+</ScrollView>

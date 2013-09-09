@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/speech_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/list_selector"
+                android:scaleType="center"
+                android:src="@drawable/voice" />
+
+            <Spinner
+                android:id="@+id/payment_categories_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="fill" />
+
+            <ImageButton
+                android:id="@+id/number_option_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:src="@drawable/menu_squared" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/billno_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/payment_billno_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/autoselect_button"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Select Category"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/autoselect_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/payment_billno_text"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/number_option_button"
+                android:text="auto select" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rechargehint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Note: Auto fill will not work for ported mobile numbers"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="auto fill text (wip)"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/divider1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/horizontaldivider"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/circle_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/payment_vendors_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/vendor_warning_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vendor warning message "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/payment_modes_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/amount_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/payment_amount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/plan_option_button"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/plan_option_button"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Amount to topup"
+                android:inputType="numberDecimal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/plan_option_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false"
+                android:text="Plans" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/payment_remarks_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Remarks"
+            android:inputType="textAutoCorrect"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/proceed_payment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Proceed >>" />
+    </LinearLayout>
+
+</ScrollView>

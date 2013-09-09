@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ads:loadAdOnCreate="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="a151766d0bb0d9c" >
+
+        </com.google.ads.AdView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/loginsubmit_button"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/newuser_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onnewuserreg_button_select"
+                    android:text="@string/new_users" />
+
+                <Button
+                    android:id="@+id/forgotpassword_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:onClick="onforgotpassword_button_select"
+                    android:singleLine="true"
+                    android:text="Forgot Password" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginsubmit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_weight="1"
+                android:onClick="onloginsubmit_button_select"
+                android:text="@string/Login" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userpassword_text" >
+
+                <CheckBox
+                    android:id="@+id/showpassword_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onshowpassword_checkbox_select"
+                    android:paddingLeft="-5dp"
+                    android:text="@string/tickpassword" />
+
+                <CheckBox
+                    android:id="@+id/keepmelogged_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="-5dp"
+                    android:text="Keep me signed" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/userpassword_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/username_text"
+                android:ems="10"
+                android:hint="@string/Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/loginscreen_label"
+                android:ems="10"
+                android:hint="@string/Username"
+                android:inputType="textEmailAddress|textFilter" />
+
+            <TextView
+                android:id="@+id/loginscreen_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Welcomeaboard"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Transactions you have marked as your favourites are displayed here"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="@drawable/horizontaldivider"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/favourites_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+</LinearLayout>

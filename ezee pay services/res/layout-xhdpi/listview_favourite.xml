@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/availableseats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/availableseats_text"
+            android:layout_alignTop="@+id/availableseats_text"
+            android:layout_toRightOf="@+id/availableseats_text"
+            android:gravity="left|center"
+            android:paddingRight="3dp"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txn_amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txn_category_label"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txn_amount_text"
+            android:background="@color/holo_blue_dark"
+            android:gravity="left|center"
+            android:paddingLeft="4dp"
+            android:text="400"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/div1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txn_operator_label"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/verticaldivider"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/favourite_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/div1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:text="fav name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txn_operator_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/txn_operator_label"
+            android:gravity="left|center"
+            android:text="Operator :"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/availableseats_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/div1"
+            android:layout_alignLeft="@+id/txn_type_text"
+            android:layout_alignTop="@+id/txn_operator_label"
+            android:gravity="left|center"
+            android:text="Debit/Credit :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txn_operator_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txn_category_label"
+            android:layout_below="@+id/ref_text"
+            android:layout_toRightOf="@+id/txn_operator_text"
+            android:gravity="left|center"
+            android:lines="2"
+            android:paddingLeft="3dp"
+            android:text="Airtel"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txn_category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txn_type_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/favourite_name_label"
+            android:layout_alignTop="@+id/txntime_label"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="1"
+            android:text="Category:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txntime_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txn_type_label"
+            android:layout_alignLeft="@+id/txn_type_text"
+            android:layout_alignParentRight="true"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="2"
+            android:text="10:10 PM"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txn_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ref_label"
+            android:layout_below="@+id/txntime_label"
+            android:layout_toRightOf="@+id/div1"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="1"
+            android:text="Type :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txn_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/txn_type_text"
+            android:paddingLeft="2dp"
+            android:text="W2B"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/ref_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txn_category_label"
+            android:layout_toRightOf="@+id/ref_label"
+            android:gravity="left|center"
+            android:paddingLeft="3dp"
+            android:text="NO:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/ref_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txn_operator_text"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txn_category_label"
+            android:gravity="left|center"
+            android:text="NO:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txn_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txntime_label"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/div1"
+            android:background="@color/holo_blue_dark"
+            android:gravity="left|center"
+            android:text="\u20B9 "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

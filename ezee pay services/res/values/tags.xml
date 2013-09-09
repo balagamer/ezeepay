@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="BUTTON_TAG_NAME" type="id">0</item>
+    <item name="BUTTON_TAG_LENGTH" type="id">1</item>
+    <item name="BUTTON_TAG_WIDTH" type="id">2</item>
+
+</resources>

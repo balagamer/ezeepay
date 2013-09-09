@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref"
+    android:summary=""
+    android:title="1 Item" >
+
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetClass="com.ezeepay.PrefFragment"
+        android:targetPackage="com.ezeepay" />
+
+</PreferenceScreen>

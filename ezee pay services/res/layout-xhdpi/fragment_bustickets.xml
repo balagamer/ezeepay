@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/destination_from_text"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/showpanel_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:src="@drawable/dropdown" />
+
+        <Button
+            android:id="@+id/filter_button"
+            style="android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/list_selector"
+            android:text="Sort by" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_selector"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/destination_from_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/datepicker_button"
+            android:layout_toRightOf="@+id/speech_imagebutton"
+            android:ems="10"
+            android:hint="Buses from" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/destination_to_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/destination_from_text"
+            android:layout_alignRight="@+id/destination_from_text"
+            android:layout_below="@+id/destination_from_text"
+            android:ems="10"
+            android:hint="Buses to" />
+
+        <Button
+            android:id="@+id/datepicker_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/destination_to_text"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/options_imagebutton"
+            android:text="Select Date" />
+
+        <Button
+            android:id="@+id/proceed_tickets_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/destination_to_text"
+            android:clickable="false"
+            android:onClick="onproceed_payment_button_select"
+            android:text="Show Availability" />
+
+        <ImageButton
+            android:id="@+id/speech_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/options_imagebutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/list_selector"
+            android:scaleType="center"
+            android:src="@drawable/voice"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/options_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/datepicker_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/list_selector"
+            android:src="@drawable/menu_squared" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tickets_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:dividerHeight="3dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        android:visibility="visible" >
+
+    </ListView>
+
+</LinearLayout>

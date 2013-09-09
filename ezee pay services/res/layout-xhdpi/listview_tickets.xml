@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/flightname_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/holo_green_light"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:singleLine="true"
+            android:text="Bus Name"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/flighttype_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/droppoint_label"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/flightname_label"
+            android:layout_toLeftOf="@+id/div1"
+            android:gravity="top|fill_vertical|fill_horizontal|fill"
+            android:lines="2"
+            android:text="Bus Type:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/traveltime_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/flighttype_label"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/flighttype_label"
+            android:layout_alignTop="@+id/ticketfare_label"
+            android:gravity="left|center"
+            android:text="Travel Time"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/ticketfare_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/droppoint_label"
+            android:layout_toRightOf="@+id/ticketfare_text"
+            android:background="@color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/boardpoint_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/flightname_label"
+            android:layout_toRightOf="@+id/div1"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="2"
+            android:text="Start Point:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/droppoint_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/boardpoint_label"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/boardpoint_label"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="2"
+            android:text="End Point:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/availableseats_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/droppoint_label"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/traveltime_label"
+            android:gravity="left|center"
+            android:text="Seats:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/runtime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ticketfare_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/droppoint_label"
+            android:gravity="fill_vertical|fill_horizontal|fill"
+            android:lines="1"
+            android:text="Run Time -"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/div1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flightname_label"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/verticaldivider"
+            android:gravity="center_vertical"
+            android:paddingTop="5dip" />
+
+        <TextView
+            android:id="@+id/runtime_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/traveltime_label"
+            android:layout_alignTop="@+id/runtime_text"
+            android:layout_toRightOf="@+id/runtime_text"
+            android:gravity="left|center_vertical|center_horizontal|center"
+            android:lines="1"
+            android:paddingLeft="3dp"
+            android:text="time"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/availableseats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/ticketfare_label"
+            android:layout_toRightOf="@+id/availableseats_text"
+            android:gravity="left|center"
+            android:paddingRight="3dp"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/runtime_label"
+            android:layout_alignRight="@+id/flighttype_label"
+            android:layout_alignTop="@+id/runtime_label"
+            android:layout_toRightOf="@+id/runtime_label"
+            android:gravity="left|center_vertical|center_horizontal|center"
+            android:lines="1"
+            android:paddingLeft="3dp"
+            android:text="Hrs"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/ticketfare_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/droppoint_label"
+            android:layout_toRightOf="@+id/availableseats_label"
+            android:background="@color/holo_blue_dark"
+            android:text="\u20B9 "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

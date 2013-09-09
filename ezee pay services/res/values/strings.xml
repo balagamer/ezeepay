@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pay_link">&lt;a href="http://www.ezeepayservices.com">Ezeepay services&lt;/a></string>
+    <string name="app_name">Ezee Pay Services</string>
+    <string name="registration_title">Newuser Regsitration</string>
+    <string name="forgotpassword_title">Forgot Password</string>
+    <string name="mainpage_title">Ezee Pay Services</string>
+    <string name="preference_title">EzeePay Settings</string>
+    <string name="app_desc">Welcome to the new era of payments. Make payments faster than ever before....</string>
+    <string name="history_title">History</string>
+    <string name="wallettopup_title">Manage Cards</string>
+    <string name="makepayments_title">Make Payments</string>
+    <string name="ViewprofileActivity_title">My Profile</string>
+    <string name="InvitefriendsActivity_title">My Friends</string>
+    <string name="action_preferences">Settings</string>
+    <string name="action_history">History</string>
+    <string name="action_help">Help</string>
+    <string name="action_about">About</string>
+    <string name="action_quit">Quit Application</string>
+    <string name="Welcomeaboard">Login to continue</string>
+    <string name="Username">Email ID</string>
+    <string name="UserID">UserID</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Quit">Quit</string>
+    <string name="tickpassword">Show password</string>
+    <string name="brieftextview">Some content X that can be explained here</string>
+    <string name="createuseraccount">Create new user account</string>
+    <string name="new_users">New user</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="passwordcheck">Confirm Password:</string>
+    <string name="email">E-Mail:</string>
+    <string name="cards">Insta Pay</string>
+    <string name="transfer">Invite Friends</string>
+    <string name="payments">Payments</string>
+    <string name="wallettopup">Quick Pay</string>
+    <string name="Lasttopupon">Last topup on</string>
+    <string name="Lastlogin">Last login</string>
+    <string name="YourBalance">Your Balance</string>
+    <string name="WelcomeMr">Welcome</string>
+    <string name="walletbalancelabel"> Wallet Balance INR </string>
+    <string name="usernamedata">name data</string>
+    <string name="Something">Some data</string>
+    <string name="Yourbalancedata">Balance data</string>
+    <string name="hello">You accepted the EULA!</string>
+    <string name="updates"> Updates </string>
+    <string name="eula">BY USING THE EZEE PAY SERVICES, AND AS A CONDITION OF YOUR EZEE PAY SERVICES SOFTWARE LICENSE, YOU AGREE NOT TO:\n 
+•	impersonate any person or entity, falsely claim an affiliation with any person or entity, or access the Ezee Pay Services  Accounts of others without permission, forge another persons digital signature, misrepresent the source, identity, or content of information transmitted via the Ezee Pay Services , perform any other similar fraudulent activity or otherwise send or receive what we reasonably believe to be potentially fraudulent funds;\n\n
+•	Use the Ezee Pay Services for the benefit or on behalf of another person;\n\n
+•	infringe our intellectual property rights, rights of publicity or privacy;\n\n
+•	Make offers, advertisements, proposals, or send junk mail or spam to others. This includes, but is not limited to, unsolicited advertising, promotional materials, or other solicitation materials, bulk mailing of commercial advertising, chain mail, informational announcements, charity requests, and petitions for signatures;\n\n
+•	Use the Ezee Pay Services , or request or make any Transfer, for any illegal purpose, or in violation of any local, provincial, national, or international law, including, without limitation, laws governing intellectual property, taxation and other proprietary rights and data protection and privacy;\n\n
+•	Use or reproduce the Ezee Pay Services  name or any other trade-marks;\n\n
+•	Defame, harass, abuse, threaten or defraud others, or collect, or attempt to collect, personal information about Users, or third parties without their consent, or use the Ezee Pay Services for any commercial use, it being understood that the Ezee Pay Services are for personal use only;\n\n
+•	Use the Ezee Pay Services if you are under the age of 18\n\n
+•	Refuse to cooperate in an investigation or provide confirmation of your identity or any other information you provide to us;\n\n
+•	Remove, circumvent, disable, damage or otherwise attempt to interfere with security-related features of the Ezee Pay Services  Software, the Ezee Pay Services , or features that enforce limitations on the use of the Ezee Pay Services ;\n\n
+•	Reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the Ezee Pay Services  Software or any part thereof, except and only to the extent that such prohibition is expressly prohibited by applicable law notwithstanding this limitation;\n\n
+•	Use the Ezee Pay Services in any manner that could damage, disable, overburden, or impair the system, including, without limitation, using the Ezee Pay Services in an automated manner;\n\n
+•	Modify, adapt, translate or create derivative works based upon the Ezee Pay Services , Ezee Pay Services  Software, or any part thereof, except and only to the extent that such prohibition is expressly prohibited by applicable law notwithstanding this limitation;\n\n
+•	Intentionally interfere with or damage operation of the Ezee Pay Services or any Users enjoyment of it, by any means, including uploading or otherwise disseminating viruses, adware, spyware, worms, or other malicious code;\n\n
+•	Use any robot, spider, other automatic device, or manual process to monitor or copy the Ezee Pay Services  website without prior written permission;\n\n
+•	Breach this Agreement or any other Ezee Pay Services  agreement or policy;\n\n
+•	Violate any law, statute, ordinance or regulation (for example, those governing financial services);\n\n
+•	Provide false, inaccurate or misleading information;\n\n
+•	Use your Ezee Pay Services  Account or the Ezee Pay Services in a manner that results in or may result in complaints, disputes, reversals, chargebacks, fines, penalties and other liability to us, a User, a third party or you;\n\n
+•	Use your Ezee Pay Services  Account or the Ezee Pay Services in a manner that we or any payment card network reasonably believe to be an abuse of the payment card system or a violation of payment card network rules;\n\n
+•	Take any action that may cause us to lose any of the services from our service providers, payment processors or other suppliers; or\n\n
+•	Control an Ezee Pay Services Account that is linked to another Ezee Pay Services Account that has engaged in any of the foregoing activities.\n\n
+You agree that we may seize or freeze Ezee Pay Services Account funds that are reasonably deemed by us to be in accounts as a result of fraud or a prohibited behavior outlined in this section, or if we reasonably believe that your actions may present a potential damage or loss to us.\n\n </string>
+    <string name="transactionid">Transaction ID</string>
+    <string name="transactiontype">Type</string>
+    <string name="invite_friends">InviteFriends</string>
+    <string name="booktickets_title">Book Tickets</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="ezeepay_highlights">* All your payment needs integrated into one single application\n\n\n*Recharge your mobile with voice\n\n\n* Blazing fast payments/booking through Quick Pay\n\n\n* Recharge through voice\n\n\n* Manage all you transaction easily and effortlessly\n\n\n* Much more...\n\n\n</string>
+    <string name="ezeepay_safe">       Ezee Pay is commited to customer safety, The payment platform we provide is safe and secure with enhanced security mechanism.\n\n\n* SSL protected service layer ensures the data sent by customer is safe.\n\n\n* Robust database mechanism to provide maximum safety for customer data.\n\n\n</string>
+    <string name="ezeepay_methods">       Ezee Pay provides you the following online payment facilities directly from your mobile.\n\n\n* Mobile/Datacard Recharge for all major service providers in India.\n\n\n* DTH Recharge for all major platforms in India\n\n\n* Book bus tickets\n\n\n* Pay Landline Bills\n\n\n* Pay Mobile Postpaid Bills\n\n\n* Pay Electricity and Gas Bills(Only on supported Cities)\n\n\n* Pay Insurance Premiums\n\n\n</string>
+    <string name="ezeepay_payments">       We provide flexible payment option but not limited to credit cards,debit cards,net banking along with wallet which will be launched soon\n\n\n* Credit Cards(Visa/Mastercard)\n\n\n* Debit Cards(Visa/Master/Maestro cards)\n\n\n* Net Banking(Supports all major banks)\n\n\n</string>
+    <string name="ezeepay_platform">       Ezee Pay is a Mobile Payment platform enabling you to make payments for Mobile Recharges, DTH Recharges, Data Card Recharges,Mobile Post-paid, Land-line, Insurance Premiums, Electricity bills, Gas Bills, Booking Bus tickets\n\n
+	   Ezee Pay Mobile Appliaction is available for devices running Android platform 4.0 and above. Other platform supported will be added very soon\n </string>
+    <string name="ezeepay_paymenthelp">       If a transaction fails on our side due to some technical reasons an immediate refund procedure will be triggered by our system, you can always contact us at <b> support@ezeepayservice.com </b>to know more about the status\n\n</string>
+     <string name="ezeepay_voice">       Just say the phrase "recharge my mobile" with the amount you need to topup/recharge.\n\n\nVoice based recharge can be done for the following functions\n\n*Mobile/Datacard topup\n*DTH\n\n Eg: Recharge my mobile with 50\n\nRecharge my data card with 100\n\n Note: Your voice region should be set to India before using voice based recharge.\n\nQuickPay data should be filled before using voice. </string>
+
+</resources>

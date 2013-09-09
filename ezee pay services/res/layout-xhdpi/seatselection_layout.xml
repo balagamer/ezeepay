@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/selectedseats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/selectedseats_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/traveldate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/busfare_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Fare:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/busfare_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="?android:listDivider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:drawableLeft="@drawable/selected"
+            android:minHeight="30.0dip"
+            android:text="Selected" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:drawableLeft="@drawable/available"
+            android:minHeight="30.0dip"
+            android:text="Available" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:drawableLeft="@drawable/booked"
+            android:minHeight="30.0dip"
+            android:text="Booked" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_selector"
+            android:drawableLeft="@drawable/ladies"
+            android:minHeight="30.0dip"
+            android:text="Ladies" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1_view"
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="?android:listDivider" />
+
+    <LinearLayout
+        android:id="@+id/deckname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="LOWER"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="UPPER"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/steer" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <HorizontalScrollView
+            android:id="@id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/full_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <GridLayout
+                    android:id="@+id/gd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="true"
+                    android:orientation="horizontal"
+                    android:rowOrderPreserved="true"
+                    android:useDefaultMargins="true" >
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@id/div1"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/small_vertical_divider"
+                    android:gravity="center_vertical" />
+
+                <GridLayout
+                    android:id="@+id/gd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:columnOrderPreserved="true"
+                    android:orientation="horizontal"
+                    android:rowOrderPreserved="true"
+                    android:useDefaultMargins="true" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>
