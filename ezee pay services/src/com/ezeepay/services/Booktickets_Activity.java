@@ -121,6 +121,7 @@ public class Booktickets_Activity extends Activity implements OnCheckedChangeLis
 	private int pay_flag = 0;
 	private Bundle bundle;
 	private WebView web;
+	String fnew="";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
